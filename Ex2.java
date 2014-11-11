@@ -104,6 +104,34 @@ class Ex2_6 extends Ex{
      }
 }
 
+class Ex2_7 extends Ex{ 
+     void execute(){
+       Random rnd = new Random();
+
+       int n1 = rnd.nextInt(9)+1;
+       int n2 = rnd.nextInt(9)-9;
+       int n3 = rnd.nextInt(90)+10;
+
+       System.out.println("1桁の正の整数: " + n1);
+       System.out.println("1桁の負の整数: " + n2);
+       System.out.println("2桁の正の整数: " + n3);
+     }
+}       
+
+class Ex2_8 extends Ex{ 
+     void execute(){
+       Scanner stdIn = new Scanner(System.in);
+       System.out.print("整数値: ");
+
+       int x = stdIn.nextInt();
+
+       Random rand = new Random();
+
+       int n = rand.nextInt(11)-5;
+       System.out.println(x + "の±5の値: " +  (x + n) + "です。");
+     }
+}
+
 
 class Ex2_00 extends Ex{
 	void execute(){
@@ -157,6 +185,10 @@ public class Ex2 {
     a = new Ex2_5();
     a.execute();
     a = new Ex2_6();
+    a.execute();
+    a = new Ex2_7();
+    a.execute();
+    a = new Ex2_8();
     a.execute();
     
 	}
