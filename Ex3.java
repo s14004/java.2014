@@ -12,13 +12,17 @@ class Ex3{
 
 	public int ex3_1(int n){
 		
-		return -1;
+		return (Math.abs(n));
 
 	}
 
 	public String ex3_2(int a, int b){
+        if((a % b) == 0){
+            return (b + "は" + a "の約数です");
+        }else{
+            return (b + "は" + a "の約数ではありません");
+        }
 
-		return "dummy";
 	}
 
 	public String ex3_3(int a, int b){
