@@ -2,7 +2,7 @@ class Ex3{
 
 	public String ex3_0(int n){
 
-        if(n>0){
+        if(n > 0){
             return "その値は正です";
         }else {
             return "その値は０か負です";
@@ -18,7 +18,7 @@ class Ex3{
 
 	public String ex3_2(int a, int b){
         if((a % b) == 0){
-            return (b + "は" + a + "約数です");
+            return (b + "は" + a + "の約数です");
         }else{
             return (b + "は" + a + "の約数ではありません");
         }
@@ -50,9 +50,10 @@ class Ex3{
             return ("正でない整数値です");
         }else if (a % 10 == 0){
             return ("その値は10の倍数です");
-        }else
+        }else{
 		    return "その値は10の倍数ではありません";
 	}
+}
 	
 	public String ex3_6(int a){
         if (a < 0){
@@ -67,16 +68,16 @@ class Ex3{
 	}
 
 	public String ex3_7(int a){
-        if (a > 100){
+        if (a < 0 || a > 100){
 		    return ("範囲(0～100)外の値です");
-        }else if (a > 80){
-            return("優");
-        }else if (a > 70){
-            return("良");
-        }else if(a > 60){
-            return("可");
-        }else{
+        }else if (0 <= a && a <= 59){
             return("不可");
+        }else if (60 <= a && a <= 69){
+            return("可");
+        }else if(70 <= a && a <= 79){
+            return("良");
+        }else{
+            return("優");
         }
 	}
 
